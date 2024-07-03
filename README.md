@@ -22,15 +22,35 @@ Layer removal (zero ablate layer outputs), show relative answer pr
 
 ![Layer removal prs](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/remove%20layer%20relative%20prs.png)
 
+# Other Layers
+
+## Layer 0 doesn't usually need cross talk
+
+Proportion in minimal cross talk circuit doesn't usually have 0
+
+![Layer removal prs](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/proportaion%20in%20minimal%20circuit%20cropped.png)
+
+Not too suprising because all names/entities are single token
+
+## Sufficient information to predict the output name at all positions, after layer 0
+
+Linear probing experiments too powerful, all the information is technically everywhere
+
+## Layer 15 is likely to do cross talk
+
+Always occured (usually the second one added)
+
+![Layer removal prs](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/proportaion%20in%20minimal%20circuit%20cropped.png)
+
+## Cross talk is needed before 39 for last two tokens
+
+See [Replace names](#replace-names)
+Layer 39 Representations are Linear, 1-3 compatible with each other, 4-5 not compatible with 1-3.
+
+Conv has no way of distinguishing 5 from 3 (can't attend back far enough), so some earlier layer does this 
+
+
 # Layer 39
-
-## Takes in tokens at their original position
-
-### Replace names
-
-Proportion of data where logit of the corrupted name is higher than the logit of original name, using the two methods described in Section ~\ref{overwritename}. The x-axis is the position the average was computed from, the y-axis is the position being substituted. To substitute into the fourth and fifth positions, we substitute the correct answer (instead of a patched name).
-
-![replace names](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/replace%20names%20plot%20merged.png)
 
 ## Convs shift one token forward
 
@@ -41,6 +61,16 @@ Proportion of data where logit of the corrupted name is higher than the logit of
 ### Resample ablation on conv slices (causal)
 
 ![conv patch merged](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/conv%20patch%20merged.png)
+
+## SSM takes in tokens at that shifted location
+
+We can modify the activations at `ssm_input` to change the output to any desired name, suggesting those positions are what matters
+
+### Replace names
+
+Proportion of data where logit of the corrupted name is higher than the logit of original name, using the two methods described in Section ~\ref{overwritename}. The x-axis is the position the average was computed from, the y-axis is the position being substituted. To substitute into the fourth and fifth positions, we substitute the correct answer (instead of a patched name).
+
+![replace names](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/replace%20names%20plot%20merged.png)
 
 ## Moves tokens info to last token
 
