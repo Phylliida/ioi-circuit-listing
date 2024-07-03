@@ -47,8 +47,7 @@ Always occured (usually the second one added)
 See [Replace names](#replace-names)
 Layer 39 Representations are Linear, 1-3 compatible with each other, 4-5 not compatible with 1-3.
 
-Conv has no way of distinguishing 5 from 3 (can't attend back far enough), so some earlier layer does this 
-
+Conv has no way of distinguishing 5 from 3 (can't attend back far enough), so some earlier layer does this. Alternatively could be artifact of method
 
 # Layer 39
 
