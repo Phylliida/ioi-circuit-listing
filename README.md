@@ -42,7 +42,9 @@ Proportion of data where logit of the corrupted name is higher than the logit of
 
 ### Resample Ablation
 
-Patch h
+Patch on `blocks.{layer}.hook_h.{token_pos}`
+
+![patch on hook_h](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/hook%20h.png)
 
 ### Cosine sim
 
@@ -57,5 +59,24 @@ On all (5) patchings, EAP on left, ACDC on right
 
 ![comparison acdc eap](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/comparison%20acdc%20eap.png)
 
+## EAP full results
 
+For these we just show whether or not the edge was present, to get acc 85%.
+
+### Over all token positions
+
+![comparison acdc eap](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/no%20positions%20eap.png)
+
+### Per token
+
+<details>
+  <summary></summary>
+  
+  Spoiler text. Note that it's important to have a space after the summary tag. You should be able to write any markdown you want inside the `<details>` tag... just make sure you close `<details>` afterward.
+  
+  ```javascript
+  console.log("I'm a code block!");
+  ```
+  
+</details>
 
