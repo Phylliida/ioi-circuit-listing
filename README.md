@@ -3,7 +3,7 @@ Everything we know about the IOI Circuit in Mamba
 
 Sorted by fact and evidence for that fact
 
-I recommend browsing using table of contents (on the right hand of your screen)
+I recommend clicking on the [README.md](https://github.com/Phylliida/ioi-circuit-listing/blob/main/README.md) then using table of contents (on the right hand of your screen)
 
 # Layer 0 and 39 important
 ## Resample Ablation
