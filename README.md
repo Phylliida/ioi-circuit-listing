@@ -32,9 +32,11 @@ Proportion in minimal cross talk circuit doesn't usually have 0
 
 Not too suprising because all names/entities are single token
 
-## Sufficient information to predict the output name at all positions, after layer 0
+## Sufficient information to predict the any name at all later, after layer 0
 
-Linear probing experiments too powerful, all the information is technically everywhere
+![Linear probe](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/linear%20probe.png) 
+
+Did same thing for other positions and got same results
 
 ## Layer 15 is likely to do cross talk
 
