@@ -85,6 +85,32 @@ Patch on `blocks.{layer}.hook_h.{token_pos}`
 
 ![cosine sim](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/cosine%20sim%20merged.png)
 
+# Other
+
+## Name compatibility on 39
+
+![name compatiblity](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/name%20compatibility.png)
+
+some other names, observe Brooklyn at the end
+
+![brooklyn sim](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/brooklyn.png)
+
+with Summer and Brooklyn removed
+
+![removed some](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/bad%20ones%20removed.png)
+
+Almost all names were compatible (could be substituted in for each other) but there were some exceptions:
+- Jesus
+- Mary
+- Summer
+- Brooklyn
+- Sydney
+
+Jesus and Mary probably have enough seperate circuitry for religous reasons.
+
+Summer is a season.
+
+Brooklyn and Sydney are major cities, so makes sense these would be treated different.
 
 # Circuit Discovery
 
