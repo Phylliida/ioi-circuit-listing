@@ -12,6 +12,10 @@ Patch `hook_layer_input`
 
 ![Patch hook_layer_input](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/combined%20patchings.png) 
 
+Patch `hook_h`
+
+![Patch h](https://raw.githubusercontent.com/Phylliida/ioi-circuit-listing/main/figures/hook%20h.png) 
+
 ## Layer Removal
 
 Layer removal (zero ablate layer outputs), show relative answer pr
