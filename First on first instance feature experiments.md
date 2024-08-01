@@ -1,3 +1,8 @@
+# How indicative of the behavior is the activation the first time the name is said?
+
+
+
+
 # Many names take repeating ~100-200 times before they do any non-zero activation
 
 ## But really they increase much sooner, just zeroed out by top-k until they cross a threshold
